@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steganography</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+ 
+  {% block show_navbar %}
+    <nav>
+      <ul>
+        <li><a href="/">Dashboard</a></li>
+      </ul>
+    </nav>
+  {% endblock %}
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+   {% block show_logout %}
+  <div class="logout-container">
+    <form action="{% url 'logout' %}" method="post">
+      {% csrf_token %}
+      <button style="background-color:white; width: 90px;" type="submit" class="bttn">Logout</button>
+    </form>
+  </div>
+{% endblock %}
+  {% block content %}{% endblock %}
+</body>
+</html> 
+
+

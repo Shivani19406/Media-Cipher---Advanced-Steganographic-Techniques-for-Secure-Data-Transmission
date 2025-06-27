@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div style="text-align: center; margin-top: 20px;">
+    <h1 style="font-weight: bold; color: black;">Video</h1>
+  </div>
+  <div class="card-container" style="margin-top: -85px;">
+    <a href="{% url 'video_encrypt' %}" class="card">
+      <h2>Encrypt</h2>
+    </a>
+    <a href="{% url 'video_decrypt' %}" class="card">
+      <h2>Decrypt</h2>
+    </a>
+  </div>
+{% endblock %}
