@@ -162,11 +162,6 @@ Stego Media File + Password
 
 ---
 
-## 📜 License
-
-This project is licensed under the **MIT License** — feel free to use and build on it!
-
----
 
 <p align="center">
   🔐 <i>Your data, hidden in plain sight — Media Cipher keeps your secrets safe.</i>
